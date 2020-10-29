@@ -37,10 +37,6 @@ spring:
     #useGlobalDataSourceStat=true
     ###############以上为配置druid添加的配置########################################
 
-mybatis:
-  mapper-locations: classpath:mapper/*Mapper.xml
-  type-aliases-package: com.limo.boot.entity
-
 #showSql
 logging:
   config: classpath:logback.xml

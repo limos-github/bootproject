@@ -1,8 +1,6 @@
 package com.limo.boot.mapper;
 
 import com.limo.boot.entity.AdminUser;
-import org.apache.ibatis.annotations.Mapper;
-import org.springframework.stereotype.Repository;
 
 import java.util.List;
 public interface AdminUserMapper {
