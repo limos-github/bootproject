@@ -15,9 +15,10 @@ public class DBConsole {
     private static final Logger logger = LoggerFactory.getLogger(DBConsole.class);
     @Autowired
     AdminUserMapper adminUserMapper;
+
     Lock lock = new ReentrantLock();
 
-    public synchronized String reduce(int id){
+    public synchronized String reduce(int id) {
         AdminUser adminUser = adminUserMapper.selectByPrimaryKey(id);
         int a = adminUser.getAge();
         if (a > 0) {
@@ -51,6 +52,4 @@ public class DBConsole {
         logger.info("查询取得数据!");
         return adminUserMapper.selectByPrimaryKey(id);
     }
-
-
 }
